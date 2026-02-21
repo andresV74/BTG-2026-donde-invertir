@@ -1,0 +1,23 @@
+---
+import Logo from "@/assets/img-logo.svg";
+import Title from '@/components/Title.astro';
+---
+
+<section class="hero bg-cover py-10 lg:py-20 px-5">
+  <header class="h-19.5 max-w-307 mx-auto mb-16">
+    <Logo width={200} />
+  </header>
+	<div>
+		<Title />
+	</div>
+</section>
+
+<style>
+  .hero {
+    background-image: url("/images/bg-mobile.jpg");
+
+    @media (min-width: 1024px) {
+      background-image: url("/images/bg-desktop.jpg");
+    }
+  }
+</style>

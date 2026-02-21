@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import eventTitle from "@/assets/img--title.webp";
+import eventLogo from "@/assets/img--event-logo.webp";
+import { lazy } from "astro:schema";
+---
+
+<div class="flex flex-nowrap items-end md:items-center gap-5 md:gap-16 max-w-140 mx-auto">
+  <header class="max-w-61">
+    <Image src={eventTitle} alt="Dónde invertir en 2026" loading="lazy" />
+    <p class="mt-12 text-lg/5 md:text-2xl font-thin">
+      Descubra las oportunidades de inversión para 2026.
+    </p>
+    <p class="mt-8 text-lg/5 md:text-2xl font-thin">
+      Un informe claro y completo para comenzar el año con visión estratégica.
+    </p>
+  </header>
+  <figure class="max-w-62.5">
+    <Image src={eventLogo} alt="26" loading="lazy" />
+  </figure>
+</div>
