@@ -1,4 +1,4 @@
-<div id="mc_embed_shell" class="max-w-115">
+<div id="mc_embed_shell" class="max-w-115 mx-auto">
   <div id="mc_embed_signup">
     <form
       action="https://gmail.us14.list-manage.com/subscribe/post?u=0196d3c76853b6f37b3060933&id=58bd989ac9&f_id=00e7b5e5f0"
@@ -266,11 +266,6 @@
   type="text/javascript"
   src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-<script
-  src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-  async
-  defer></script>
-
 <script is:inline>
   const messageField = document.getElementById("mce-success-response");
   const successMessages = [
@@ -283,8 +278,7 @@
   const observer = new MutationObserver((mutationsList) => {
     for (let mutation of mutationsList) {
       if (successMessages.includes(mutation.addedNodes[0]?.data)) {
-        window.location.href =
-          "/archivo.pdf";
+        window.location.href = "/archivo.pdf";
       }
     }
   });
@@ -295,6 +289,11 @@
     subtree: true,
   });
 </script>
+
+<script
+  src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  async
+  defer></script>
 
 <script type="text/javascript">
   (function ($) {

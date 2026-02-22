@@ -1,0 +1,19 @@
+---
+import Card from "@/components/Card.astro";
+import { cardsData } from '@/consts/cardsData';
+---
+
+<section class="bg-btg-6 pt-18.5 pb-23 px-5">
+  <h2 class="text-[1.75rem] text-btg-15 text-center font-light mb-14">¿Qué encontrará en este informe?</h2>
+	<div class="flex flex-wrap justify-center lg:grid grid-cols-3 gap-12.5 max-w-282 mx-auto">
+		{
+			cardsData.map((card) => (
+				<Card
+					icon={card.icon}
+					title={card.title}
+					description={card.description}
+				/>
+			))
+		}
+	</div>
+</section>
