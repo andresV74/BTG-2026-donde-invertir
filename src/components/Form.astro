@@ -154,7 +154,7 @@
             type="submit"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button"
+            class="button g-recaptcha"
             value="Enviar"
             data-sitekey="6LcHLWUsAAAAAAFtNWDJvpev_YTzPPVHh3q6oAIl"
             data-callback="onSubmit"
@@ -189,11 +189,17 @@
   }
 
   label:not(.checkbox) {
+		font-size: 0.75em;
     font-weight: 300;
     pointer-events: none;
     position: absolute;
     transition: all 0.3s ease-in-out;
-    top: 17px;
+    top: 19px;
+
+		@media (min-width: 768px) {
+			font-size: 1rem;
+			top: 17px;
+		}
   }
 
   input:not([type="submit"]),
