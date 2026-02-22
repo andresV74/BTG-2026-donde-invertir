@@ -1,14 +1,16 @@
 ---
 import Logo from "@/assets/img-logo.svg";
 import Title from '@/components/Title.astro';
+import Form from '@/components/Form.astro';
 ---
 
 <section class="hero bg-cover py-10 lg:py-20 px-5">
   <header class="h-19.5 max-w-307 mx-auto mb-16">
     <Logo width={200} />
   </header>
-	<div>
+	<div class="flex flex-wrap max-w-282 gap-26 mx-auto">
 		<Title />
+		<Form />
 	</div>
 </section>
 
