@@ -1,19 +1,33 @@
 ---
 import Card from "@/components/Card.astro";
-import { cardsData } from '@/consts/cardsData';
+import { cardsData } from "@/consts/cardsData";
 ---
 
 <section class="bg-btg-6 pt-18.5 pb-23 px-5">
-  <h2 class="text-[1.75rem]/7 text-btg-15 text-center font-light mb-14">¿Qué encontrará en este informe?</h2>
-	<div class="flex flex-wrap justify-center lg:grid grid-cols-3 gap-12.5 max-w-282 mx-auto">
-		{
-			cardsData.map((card) => (
-				<Card
-					icon={card.icon}
-					title={card.title}
-					description={card.description}
-				/>
-			))
-		}
-	</div>
+  <h2 class="text-[1.75rem]/7 text-btg-15 text-center font-light mb-14">
+    ¿Qué encontrará en este informe?
+  </h2>
+  <div
+    class="flex flex-wrap justify-center lg:grid grid-cols-3 gap-12.5 max-w-282 mx-auto"
+  >
+    {
+      cardsData.map((card) => (
+        <Card
+          icon={card.icon}
+          title={card.title}
+          description={card.description}
+        />
+      ))
+    }
+  </div>
+  <div class="mt-12.5">
+    <p>
+      <a
+        href="#mc-embedded-subscribe-form"
+        class="flex items-center justify-center w-72 h-12 mx-auto bg-white hover:bg-btg-2 text-2xl text-btg-8 rounded-lg duration-200 ease-in"
+			>
+				Quiero el documento
+			</a>
+    </p>
+  </div>
 </section>

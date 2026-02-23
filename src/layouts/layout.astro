@@ -5,6 +5,7 @@ import "../styles/global.css";
 <!doctype html>
 <html lang="es">
   <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-327447406"
     ></script>
@@ -21,11 +22,12 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>
-      BTG Pactual :: Colombia frente al futuro, elecciones presidenciales 2026
+      BTG Pactual :: Dónde invertir 2026 - Descubra oportunidades de inversión
+      para 2026
     </title>
     <meta
       name="description"
-      content="BTG Pactual :: Evento en vivo :: Colombia frente al futuro, elecciones presidenciales 2026"
+      content="BTG Pactual :: Evento en vivo :: Dónde invertir 2026 - Descubra oportunidades de inversión para 2026"
     />
 
     <link rel="icon" type="image/ico" href="./favicon.ico" />
@@ -49,7 +51,6 @@ import "../styles/global.css";
     <link rel="manifest" href="./site.webmanifest" />
     <meta property="og:title" content="BTG Pactual :: Evento en vivo" />
     <meta property="og:image" content="./android-chrome-512x512.png" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <slot />
@@ -70,5 +71,6 @@ import "../styles/global.css";
     font-family: "BTG Pactual Office", sans-serif;
     font-size: 16px;
     line-height: 1.125rem;
+    scroll-behavior: smooth;
   }
 </style>
