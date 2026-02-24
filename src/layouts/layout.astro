@@ -5,22 +5,24 @@ import "../styles/global.css";
 <!doctype html>
 <html lang="es">
   <head>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-327447406"
+    <script is:inline src="https://www.google.com/recaptcha/api.js" async defer
     ></script>
-    <script>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B7XMK6DR2C"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
 
-      gtag("config", "G-327447406");
+      gtag("config", "G-B7XMK6DR2C");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>
       BTG Pactual :: Dónde invertir 2026 - Descubra oportunidades de inversión
       para 2026
@@ -29,7 +31,7 @@ import "../styles/global.css";
       name="description"
       content="BTG Pactual :: Evento en vivo :: Dónde invertir 2026 - Descubra oportunidades de inversión para 2026"
     />
-
+    <meta property="og:image" content="./bg-logo-shared.png" />
     <link rel="icon" type="image/ico" href="./favicon.ico" />
     <link
       rel="apple-touch-icon"
@@ -53,6 +55,17 @@ import "../styles/global.css";
     <meta property="og:image" content="./android-chrome-512x512.png" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MMFHRZGM"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
     <script is:inline>
       function onSubmit(token) {
