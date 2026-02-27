@@ -296,8 +296,8 @@
   type="text/javascript"
   src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-<script is:inline>
-  const messageField = document.getElementById("mce-success-response");
+<script>
+  const messageField = document.getElementById("mce-success-response") as HTMLDivElement;
   const successMessages = [
     "¡Gracias por suscribirse!",
     "Ya estás suscrito, tu perfil ha sido actualizado. ¡Gracias!",
@@ -307,8 +307,10 @@
 
   const observer = new MutationObserver((mutationsList) => {
     for (let mutation of mutationsList) {
-      if (successMessages.includes(mutation.addedNodes[0]?.data)) {
-        window.location.href = "/archivo.pdf";
+      const addedNode = mutation.addedNodes[0] as Text;
+      if (successMessages.includes(addedNode?.data)) {
+        window.location.href =
+          "/BTG_Pactual-Donde_invertir-Reporte_anual_2026.pdf";
       }
     }
   });
